@@ -1,13 +1,11 @@
-export interface UserData {
-    email: string
-    password: string
-    name: string
-}
+import { UserData } from "./pages/Conta"
 
 const conta:UserData = {
+    id: '1',
     email: 'andreolive@live.com',
     password: '123456',
-    name: 'André Cardoso'
+    name: 'André Cardoso',
+    balance: 2000.00
 }
 
 export const api = new Promise<UserData>((resolve) => {
